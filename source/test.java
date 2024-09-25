@@ -1,23 +1,28 @@
 import java.util.ArrayList;
 import java.util.*;
 
+// Let's test the system !!
+
 public class test {
    
     static List<Association> Liste_Association = new ArrayList<>();
     static Scanner input = new Scanner (System.in);
 
     public static void main(String args[]) throws Exception{
-    
+
+        // Creating associations instances
         Association association1 =  new Association(10,"Acting for life","Humanitaire","97885216");
         System.out.println("\n"+"\t------Association1------\n"+association1.toString());
         Association association2 =  new Association(11,"Vélo Cité","Sport","Quelque part","VeloCite@gmail.com");
         System.out.println("\n"+"\t------Association2------\n"+association2.toString());
 
+        // Creating donors instances
         Donneur donneur1 = new Donneur(20,"Rolland","Luc","RolandLuc@gmail");
         System.out.println("\n"+"\t>>>> donneur1 <<<<\n"+donneur1.toString());
         Donneur donneur2 = new Donneur(21,"Prevost","Marine","65200200");
         Donneur donneur3 = new Donneur(22,"Lefort","Joseph","84112113");
-    
+
+       // Creating donations instances 
         Don donA = new Don(30, "MONNAIE",180,"Priorité pour les enfants", donneur1, association1);
         System.out.println("\n"+"---> Don A \n"+donA.toString());
         Don donB = new Don(31, "Casque",80,200, "", donneur1, association2);
@@ -26,7 +31,15 @@ public class test {
         Don donD = new Don(33, "Monnaie",10,"Pour la protection", donneur2, association2);
         Don donE = new Don(34, "Nourriture",10,"", donneur3, association2);
         
-
+       // The following sections allow to perform tasks to verify the functionning of each part of 
+       // this program, including:
+       
+       //   0. Creating new donation instance 
+       //   1. Display donoers list of a given association
+       //   2. Display donations list of a given association
+       //   3. Display donations list of a given donor
+       //   4. Deleting a donation
+       
         int part=0;
         while (part<5){
                 System.out.print("\n>Next part: "); 
