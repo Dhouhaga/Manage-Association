@@ -35,7 +35,7 @@ public class test {
        // this program, including:
        
        //   0. Creating new donation instance 
-       //   1. Display donoers list of a given association
+       //   1. Display donors list of a given association
        //   2. Display donations list of a given association
        //   3. Display donations list of a given donor
        //   4. Deleting a donation
